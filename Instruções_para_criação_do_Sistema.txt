@@ -1,0 +1,101 @@
+# Prompt — Desenvolvimento do [T] Finance
+
+Desenvolva um sistema web de gestão financeira chamado **[T] Finance**, com foco em simplicidade, organização e facilidade de uso.
+
+## 1. Tecnologias
+
+- **Backend:** Node.js com Express.
+- **Frontend:** React com Vite.
+- **Interface:** Tailwind CSS, com visual moderno, responsivo e limpo.
+- **Banco de dados:** SQLite, armazenado localmente.
+- **Ícones:** Lucide React.
+- **Gráficos:** Recharts.
+
+O sistema deverá funcionar diretamente no navegador, com o backend Node.js servindo a API e, em produção, os arquivos do frontend.
+
+## 2. Funcionalidades principais
+
+### Dashboard
+- Resumo do saldo financeiro.
+- Total de contas a pagar.
+- Total de contas a receber.
+- Valores vencidos e próximos do vencimento.
+- Gráfico de receitas e despesas por mês.
+
+### Contas a pagar
+- Cadastrar, editar e excluir despesas.
+- Informar descrição, categoria, valor, vencimento e observações.
+- Marcar contas como pagas, registrando a data do pagamento.
+- Filtrar contas por período, categoria e situação.
+
+### Contas a receber
+- Cadastrar, editar e excluir receitas.
+- Informar descrição, categoria, valor, vencimento e observações.
+- Marcar contas como recebidas, registrando a data do recebimento.
+- Filtrar por período e situação.
+
+### Categorias
+- Cadastrar categorias de receitas e despesas.
+- Editar e excluir categorias não utilizadas.
+- Utilizar categorias nos lançamentos financeiros.
+
+### Relatórios
+- Resumo mensal de receitas e despesas.
+- Histórico de lançamentos.
+- Filtros por datas e categorias.
+- Exportação de relatórios em CSV.
+
+## 3. Interface
+
+Criar uma interface intuitiva contendo:
+
+- Menu lateral com Dashboard, Contas a Pagar, Contas a Receber, Categorias e Relatórios.
+- Tabelas organizadas com pesquisa e filtros.
+- Formulários simples para novos lançamentos.
+- Indicadores visuais de contas pagas, pendentes e vencidas.
+- Suporte a tema claro e escuro.
+- Valores formatados em reais (R$).
+- Datas no padrão brasileiro (DD/MM/AAAA).
+
+## 4. Banco de dados
+
+Utilizar SQLite com tabelas para:
+
+- Categorias.
+- Contas a pagar.
+- Contas a receber.
+
+Criar automaticamente o banco de dados e suas tabelas na primeira execução.
+
+## 5. Requisitos adicionais
+
+- O sistema será inicialmente de uso pessoal, sem necessidade de login.
+- Permitir lançamentos recorrentes mensais.
+- Implementar operações CRUD completas.
+- Validar os dados enviados ao backend.
+- Armazenar valores monetários em centavos para evitar erros de precisão.
+- Calcular automaticamente os totais financeiros.
+- Diferenciar valores previstos de valores efetivamente pagos ou recebidos.
+- Não utilizar serviços externos ou banco de dados na nuvem.
+- Manter a estrutura do código simples, organizada e fácil de expandir.
+
+## 6. Execução
+
+O projeto deve permitir instalação e execução por comandos simples:
+
+```bash
+npm install
+npm run dev
+```
+
+Preparar também um comando `npm start` para execução em produção, servindo frontend e API pelo Node.js.
+
+Criar um README.md com as instruções de instalação, configuração, execução e backup do arquivo SQLite.
+
+## 7. Objetivo final
+
+Entregar um sistema web funcional chamado **[T] Finance**, para controle pessoal de contas a pagar e receber, com dashboard, relatórios básicos e armazenamento local em SQLite.
+
+Priorizar simplicidade, desempenho, facilidade de manutenção e uma experiência agradável no navegador.
+
+**Importante:** implementar as funcionalidades de verdade, incluindo persistência no SQLite. Não criar apenas telas demonstrativas com dados fictícios.
