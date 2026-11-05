@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/Logo_TFinance.png" alt="[T] Finance" width="480" />
+</p>
+
 # [T] Finance
 
 Sistema web de gestão financeira pessoal para controlar **contas a pagar** e **contas a receber**, com dashboard, categorias, relatórios mensais e exportação em CSV. Todos os dados ficam armazenados localmente em um arquivo SQLite — sem login, sem nuvem e sem serviços externos.
